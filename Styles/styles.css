@@ -1,0 +1,286 @@
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --light-gray: hsl(240, 2%, 79%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 50%);
+  font-size: 16px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: var(--very-dark-blue);
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 0;
+}
+
+p {
+  color: hsl(207, 13%, 34%);
+  line-height: 1.8rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+section h2 {
+  margin-top: 3rem;
+}
+
+section h2:first-child {
+  margin-top: 0;
+}
+
+header > img {
+  max-width: 36px;
+}
+
+header #close-menu-icon {
+  display: none;
+}
+
+header.active #close-menu-icon {
+  display: block;
+}
+
+header.active #hamburger {
+  display: none;
+}
+
+nav#mobile-menu {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+header.active nav#mobile-menu {
+  display: block;
+}
+
+nav#mobile-menu > ul {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 34px 23px rgba(0, 0, 0, 0.1);
+}
+
+nav#mobile-menu img {
+  width: 10px;
+  padding-left: 10px;
+}
+
+nav#mobile-menu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  display: block;
+  padding: 1rem;
+}
+
+nav#mobile-menu ul ul {
+  background: hsla(240, 3%, 79%, 0.349);
+  padding: 0.8rem 0;
+  margin: 0 1.5rem;
+}
+
+nav#mobile-menu ul ul a {
+  color: hsl(207, 13%, 34%);
+  padding: 1rem;
+  line-height: 1;
+  font-size: 1.1rem;
+}
+
+hr {
+  border-top: 1px solid rgba(187, 187, 187, 0.274);
+  margin: 1.5rem;
+}
+
+nav#mobile-menu #mobile-menu-nav-buttons .button {
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  color: white;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+  color: var(--light-gray);
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer img {
+  max-width: 30%;
+  padding: 3rem;
+  padding-top: 4rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  overflow-y: hidden;
+}
+
+.button {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.button.white-button {
+  background: hsl(0, 0%, 100%);
+  border: none;
+  color: var(--light-red);
+}
+
+.button.white-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--very-light-red);
+}
+
+.button.clear-button {
+  background: none;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button.clear-button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: var(--very-light-red);
+}
+
+.coloured-section h2 {
+  color: white;
+}
+
+#hero {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  background-image: url(../images/bg-pattern-intro.svg),
+    linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: 35% 35%;
+  background-size: 400%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+}
+
+#hero h2 {
+  margin-top: 6rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+#hero .hero_buttons {
+  display: flex;
+  align-items: center;
+}
+
+#hero .hero_buttons .button + .button {
+  margin-left: 1rem;
+}
+
+#second-section img {
+  transform: scale(1.2);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#mid-section {
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: 50% -50%;
+  background-size: 155%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: hsl(237, 17%, 21%);
+  margin-top: 15rem;
+}
+
+#mid-section h2 {
+  padding-top: 15rem;
+}
+
+#mid-section p {
+  padding-bottom: 3rem;
+  color: var(--light-gray);
+}
+
+#mid-section img {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+}
+
+#end-section img {
+  transform: scale(1.52);
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
